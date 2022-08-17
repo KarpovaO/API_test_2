@@ -20,7 +20,7 @@ class MobileBankApiTestV1 {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("something, no matter what"))
+                .body("data", equalTo("no matter what"))
                 .body("url", equalTo("https://postman-echo.com/post"))
                 .header("Content-Type", "application/json; charset=utf-8")
                 .header("Vary", "Accept-Encoding")
